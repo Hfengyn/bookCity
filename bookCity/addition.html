@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>网上书城</title>
+    <link rel="stylesheet" href="css/addition.css">
+    <script src="jQuery.js"></script>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul class="nav">
+          <li><a href="#">书吧</a></li>
+          <li><a href="index.php" class="on">网站首页</a></li>
+          <li><a href="#">关于我们</a></li>
+          <li><a href="show.php">图书展示</a></li>
+          <li><a href="#">联系我们</a></li>
+          <li><a href="shopping.php">购物车</a></li>
+          <li><a href="addition.html">添加图书</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div class="addition">
+      <h1>添加图书</h1>
+      <div class="add_in"><span>书名：</span>
+        <input id="title" type="text" placeholder="书名">
+      </div>
+      <div class="add_in"><span>简介：</span>
+        <input id="introduction" type="text" placeholder="简介">
+      </div>
+      <div class="add_in"><span>作者：</span>
+        <input id="author" type="text" placeholder="作者">
+      </div>
+      <div class="add_in"><span>出版社：</span>
+        <input id="press" type="text" placeholder="出版社">
+      </div>
+      <div class="add_in"><span>出版日期：</span>
+        <input id="pressTime" type="text" placeholder="出版日期">
+      </div>
+      <div class="add_in"><span>价格：</span>
+        <input id="price" type="text" placeholder="价格">
+      </div>
+      <div class="add_in"><span>ISBN：</span>
+        <input id="isbn" type="text" placeholder="ISBN">
+      </div>
+      <div class="add_pic"><span class="shuJi">书籍图片：</span>
+        <div class="pic_btn">
+          <input id="pic" type="file" placeholder="ISBN" name="img">
+        </div>
+      </div>
+      <div class="add">
+        <button class="add_btn" onclick="add()">添加</button>
+      </div>
+    </div>
+    <footer>
+      <div class="footer"><span>
+          <ul class="lianjie">
+            <li><a href="#">免费条款</a></li>
+            <li><a href="#">隐私保护</a></li>
+            <li><a href="#">咨询热点</a></li>
+            <li><a href="#">联系我们</a></li>
+            <li><a href="#">公司简介</a></li>
+            <li><a href="#">批发方案</a></li>
+            <li><a href="#">配送方式</a></li>
+          </ul></span><span class="banQuan">©2016-2999 SSS版权所有，并保留所有权利</span></div>
+    </footer>
+  </body>
+  <script>
+    function add(){
+      var title = document.getElementById("title").value;
+      var introduction = document.getElementById("introduction").value;
+      var author = document.getElementById("author").value;
+      var press = document.getElementById("press").value;
+      var pressTime = document.getElementById("pressTime").value;
+      var price = document.getElementById("price").value;
+      var isbn = document.getElementById("isbn").value;
+      // var pic = document.getElementById("pic").value;
+      var pic = $("#pic")[0]['files'][0].name;
+      // console.log(img);
+      // var form = new FormData();
+      // var srcname = pic.slice(12);
+      $.ajax({
+        type: "post",
+        url: "add.php",
+        async: true,
+        dataType: "json",
+        data:{
+          title: title,
+          introduction: introduction,
+          author: author,
+          press: press,
+          pressTime: pressTime,
+          price: price,
+          isbn: isbn,
+          pic: pic
+        },
+        success:function(data){
+          // console.log(data);
+          if(data.status == 1){
+            alert("添加成功");
+          }else{
+            alert("添加失败");
+          }
+        }
+      })
+    }
+  </script>
+</html>

@@ -1,0 +1,95 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+ul,
+ol {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: #000;
+}
+header {
+  width: 100%;
+  height: 50px;
+  border-bottom: 1px solid #000;
+  background-color: #222;
+}
+header nav {
+  width: 1200px;
+  margin: 0 auto;
+}
+header nav .nav li {
+  float: left;
+}
+header nav .nav li a {
+  display: block;
+  height: 50px;
+  color: #9d9d9d;
+  font-size: 16px;
+  line-height: 50px;
+  padding: 0 10px;
+}
+header nav .nav li a:hover {
+  color: #fff;
+  background-color: #000;
+}
+header nav .nav li .on {
+  color: #fff;
+  background-color: #000;
+}
+.footer {
+  width: 1200px;
+  border-top: 1px solid #eee;
+  margin: 0 auto;
+  padding-top: 20px;
+}
+.footer span .lianjie {
+  display: flex;
+  justify-content: center;
+}
+.footer span .lianjie li {
+  float: left;
+}
+.footer span .lianjie li a {
+  font-weight: bold;
+  font-size: 14px;
+  color: #377cb8;
+  margin-right: 5px;
+}
+.footer .banQuan {
+  display: block;
+  width: 1200px;
+  text-align: center;
+  font-size: 14px;
+  color: #d3d3d3;
+  line-height: 40px;
+}
+.shopping {
+  width: 1200px;
+  margin: 85px auto 60px;
+  text-align: center;
+}
+.shopping h1 {
+  font-size: 39px;
+  margin-bottom: 13px;
+}
+.shopping .shop {
+  width: 1160px;
+  min-height: 300px;
+  border: 5px solid #efeae5;
+  padding: 15px;
+}
+.shopping .shop table {
+  border-color: #ddd;
+}
+.shopping .shop table .info {
+  font-size: 14px;
+  font-weight: bold;
+  color: #333;
+  line-height: 20px;
+}
+.shopping .shop table .info_n td img {
+  height: 100px;
+}

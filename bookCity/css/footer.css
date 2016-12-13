@@ -1,0 +1,27 @@
+.footer {
+  width: 1200px;
+  border-top: 1px solid #eee;
+  margin: 0 auto;
+  padding-top: 20px;
+}
+.footer span .lianjie {
+  display: flex;
+  justify-content: center;
+}
+.footer span .lianjie li {
+  float: left;
+}
+.footer span .lianjie li a {
+  font-weight: bold;
+  font-size: 14px;
+  color: #377cb8;
+  margin-right: 5px;
+}
+.footer .banQuan {
+  display: block;
+  width: 1200px;
+  text-align: center;
+  font-size: 14px;
+  color: #d3d3d3;
+  line-height: 40px;
+}

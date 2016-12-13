@@ -1,0 +1,207 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+ul,
+ol {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: #000;
+}
+header {
+  width: 100%;
+  height: 50px;
+  border-bottom: 1px solid #000;
+  background-color: #222;
+}
+header nav {
+  width: 1200px;
+  margin: 0 auto;
+}
+header nav .nav li {
+  float: left;
+}
+header nav .nav li a {
+  display: block;
+  height: 50px;
+  color: #9d9d9d;
+  font-size: 16px;
+  line-height: 50px;
+  padding: 0 10px;
+}
+header nav .nav li a:hover {
+  color: #fff;
+  background-color: #000;
+}
+header nav .nav li .on {
+  color: #fff;
+  background-color: #000;
+}
+.footer {
+  width: 1200px;
+  border-top: 1px solid #eee;
+  margin: 0 auto;
+  padding-top: 20px;
+}
+.footer span .lianjie {
+  display: flex;
+  justify-content: center;
+}
+.footer span .lianjie li {
+  float: left;
+}
+.footer span .lianjie li a {
+  font-weight: bold;
+  font-size: 14px;
+  color: #377cb8;
+  margin-right: 5px;
+}
+.footer .banQuan {
+  display: block;
+  width: 1200px;
+  text-align: center;
+  font-size: 14px;
+  color: #d3d3d3;
+  line-height: 40px;
+}
+.main {
+  width: 1200px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.main .mleft {
+  float: left;
+  width: 848px;
+  height: 725px;
+  background-color: #eee;
+  margin-top: 20px;
+}
+.main .mleft h1 {
+  font-size: 59px;
+  color: #333;
+  padding: 74px 0 0 50px;
+}
+.main .mleft p {
+  font-size: 20px;
+  color: #333;
+  padding: 17px 50px;
+}
+.main .mleft img {
+  display: block;
+  width: 749px;
+  height: 484px;
+  overflow: hidden;
+  margin: 0 auto;
+}
+.main .mright {
+  float: right;
+  margin-top: 45px;
+}
+.main .mright h1 {
+  font-size: 45px;
+  margin-bottom: 27px;
+}
+.main .mright input {
+  display: block;
+  width: 186px;
+  height: 27px;
+  border-radius: 5px;
+  border: 2px solid #ccc;
+  margin-bottom: 20px;
+  padding: 3px 10px;
+  font-size: 14px;
+}
+.main .mright .btn {
+  display: flex;
+  justify-content: center;
+}
+.main .mright .btn button {
+  width: 55px;
+  height: 35px;
+  border: 2px solid #ccc;
+  background-color: #fff;
+  border-radius: 5px;
+  font-size: 14px;
+  cursor: pointer;
+}
+.main .mright .btn .login {
+  margin-right: 20px;
+}
+.show {
+  width: 1200px;
+  margin: 30px auto 85px;
+}
+.show .showBox {
+  width: 876px;
+  overflow: hidden;
+}
+.show .showBox img {
+  width: 240px;
+  height: 275px;
+}
+.show .showBox li {
+  float: left;
+  width: 240px;
+  height: 376px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-right: 30px;
+  margin-bottom: 20px;
+  padding: 5px 10px;
+  overflow: hidden;
+}
+.show .showBox h3 {
+  font-size: 24px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  margin-bottom: 15px;
+  margin-top: 10px;
+  padding-left: 10px;
+}
+.show .showBox .price {
+  display: flex;
+  justify-content: space-between;
+  line-height: 34px;
+  padding-left: 10px;
+}
+.show .showBox .price a {
+  width: 82px;
+  height: 34px;
+  background-color: #5cb85c;
+  border-radius: 5px;
+  text-align: center;
+  line-height: 34px;
+  font-size: 14px;
+  color: #fff;
+}
+.show .fanYe {
+  width: 876px;
+  display: flex;
+  justify-content: center;
+}
+.show .fanYe .num {
+  width: 128px;
+  height: 32px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+.show .fanYe .num li {
+  width: 31px;
+  height: 32px;
+  border-right: 1px solid #ddd;
+  float: left;
+  text-align: center;
+  color: #337ab7;
+  line-height: 32px;
+  cursor: pointer;
+}
+.show .fanYe .num .nu {
+  background-color: #337ab7;
+  color: #fff;
+}
+.show .fanYe .num .next {
+  border-right: none;
+}
